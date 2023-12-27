@@ -169,7 +169,7 @@ export const isAvailable = function () {
 };
 
 function api30(): boolean {
-	return (<any>android).os.Build.VERSION.SDK_INT >= 30 && Utils.ad.getApplicationContext().getApplicationInfo().targetSdkVersion >= 30;
+	return (<any>android).os.Build.VERSION.SDK_INT >= 30 && Utils.android.getApplicationContext().getApplicationInfo().targetSdkVersion >= 30;
 }
 
 export const requestPermissions = function () {
